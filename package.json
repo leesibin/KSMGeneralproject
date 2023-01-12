@@ -1,0 +1,25 @@
+{
+  "name": "ksmgeneralproject",
+  "version": "1.0.0",
+  "description": "works for 1, 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leesibin/KSMGeneralproject.git"
+  },
+  "author": "KSH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leesibin/KSMGeneralproject/issues"
+  },
+  "homepage": "https://github.com/leesibin/KSMGeneralproject#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fxjs": "^0.21.3",
+    "mongoose": "^6.8.3",
+    "node-telegram-bot-api": "^0.61.0"
+  }
+}
