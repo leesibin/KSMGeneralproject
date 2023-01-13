@@ -2,6 +2,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "node": "^19.3.0",
-    "node-telegram-bot-api": "^0.61.0"
+    "node-telegram-bot-api": "^0.61.0",
+    "request": "^2.88.2"
   }
 }
