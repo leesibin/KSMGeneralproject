@@ -54,7 +54,10 @@ bot.onText(/^김시민기억해 (.+)/, (msg, mat) => {
 });
 /* 자료 저장 */
 bot.onText(/^김시민저장해 (.+)/, (msg, mat) => {
-  if (msg["message_id"] - 1 == obj.명령id) {
+  if (
+    msg["message_id"] - obj.명령id <= 7 &&
+    msg["message_id"] - obj.명령id > 0
+  ) {
     const element = mat[1];
     (async () => {
       await Message.updateMany(
