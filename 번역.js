@@ -14,7 +14,9 @@ app.get('/translate', function (req, res) {
     };
    request.post(options, function (error, response, body) {
      if (!error && response.statusCode == 200) {
+      let no = JSON.parse(body);
        res.writeHead(200, {'Content-Type': 'text/json;charset=utf-8'});
+       console.log(no);
        res.end(body);
      } else {
        res.status(response.statusCode).end();
