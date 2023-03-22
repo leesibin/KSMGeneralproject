@@ -29,7 +29,7 @@ MongoDB
 
 (☆2-1)mongod.cfg 연결하여 들어가기
 
-(☆2-2)security: authorization: enabled 찾고 
+(☆2-2)security: authorization: enabled 설정하기
 
 
 
