@@ -1,17 +1,18 @@
 # DB저장한 data Telegram bot을 활용하여 Chat BOT만들기
 
-개발배경
+ ● 개발배경
 
 요즘 떠오르는 GPT는 어떻게 완성되었을까? 라는 의문점으로 시작하게 되었습니다.
 
-기술스택
+ ●기술
+ 
 Node.js
 
 Telegram Bot
 
 MongoDB
 
-개발 관련 설명
+ ●개발 관련 설명
 
 (1)Telegram에서 내가 원하는 Data를 DB에 저장하여 원할때 채팅으로 정보를 받아볼 수 이씁니다.
 
