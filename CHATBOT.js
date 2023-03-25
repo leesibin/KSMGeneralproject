@@ -151,7 +151,7 @@ bot.on('message', (msg) => {
       let day = year + '-0' + month + '-' + date3
       console.log(day)
       const key2 = process.env.keycorona
-      const surl = 'https://apis.data.go.kr/1352000/ODMS_COVID_04/callCovid04Api?serviceKey='+key+'&pageNo=1&numOfRows=500&std_day=2023-03-17&gubun=%EC%84%9C%EC%9A%B8&apiType=JSON'
+      const surl = 'https://apis.data.go.kr/1352000/ODMS_COVID_04/callCovid04Api?serviceKey='+key+'&pageNo=1&numOfRows=500&std_day=2023-03-22&gubun=%EC%84%9C%EC%9A%B8&apiType=JSON'
         console.log(surl)
       fetch(surl)
         .then((res) => res.json())
