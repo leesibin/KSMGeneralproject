@@ -26,16 +26,26 @@ export default {
       chatlist : [],
       chatmessage: "",
       time: dayjs().format('HH:mm'),
-      target:""
+      name:this.$route.query.name,
     };
+  },
+  created() {
+    this.$socket.on('chat message', (data) => {
+      window.scrollTo(0, document.body.scrollHeight)
+      const data0 = data.id + "님 - " + data.message;
+      this.chatlist.push(data0)
+    })
   },
   methods: {
     chating(){
+      if (this.chatmessage) {
       let chatbg = document.querySelector('.chatbg')
-      console.log(this.chatmessage);
-      this.chatlist.push(this.chatmessage);
-      this.chatmessage = ""
-      chatbg.scrollTop = chatbg.scrollHeight
+        this.$socket.emit('chat message', { message: this.chatmessage,
+        id:this.name})
+        this.chatmessage = ""
+        chatbg.scrollTop = chatbg.scrollHeight
+      }
+      
     }
   },
 };
