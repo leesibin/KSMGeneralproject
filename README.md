@@ -5,8 +5,7 @@
 
 ## 🔨 Mean
 - Frontend :  <img src="https://img.shields.io/badge/Vue3.js-4FC08D?style=flat&logo=Vue.js&logoColor=white" />
-- Backend : <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=Mongodb&logoColor=white" />
+- Backend : <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=Mongodb&logoColor=white" />
 - A.I/M.L : <img src="https://img.shields.io/badge/OpenAI-412991?style=flat&logo=OpenAI&logoColor=white" />
 
  ## URL : https://port-0-chatbot-6g2llfox94b6.sel3.cloudtype.app/
