@@ -30,18 +30,21 @@ export default {
     };
   },
   created() {
-    this.$socket.on('chat message', (data) => {
-      window.scrollTo(0, document.body.scrollHeight)
-      const data0 = data.id + "님 - " + data.message;
+    this.$socket.on('ALLuser', () => {
+      this.$socket.emit('ALLuser',{name:this.name})
+    })
+
+    this.$socket.on('update', (data) => {
+      const data0 = data.name+" - "+ data.message;
       this.chatlist.push(data0)
+      console.log(this.chatlist)
     })
   },
   methods: {
     chating(){
       if (this.chatmessage) {
       let chatbg = document.querySelector('.chatbg')
-        this.$socket.emit('chat message', { message: this.chatmessage,
-        id:this.name})
+        this.$socket.emit('chat message', { message: this.chatmessage})
         this.chatmessage = ""
         chatbg.scrollTop = chatbg.scrollHeight
       }

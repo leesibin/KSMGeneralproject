@@ -6,8 +6,16 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^7.0.2",
+    "morgan": "^1.10.0",
     "node": "^19.8.1",
     "node-telegram-bot-api": "^0.61.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "socket.io": "^4.6.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "scripts": {
+    "start": "node build/dev-server.js",
+    "dev": "node build/dev-server.js",
+    "build": "node build/dev-server.js"
   }
 }

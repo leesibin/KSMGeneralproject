@@ -18,12 +18,12 @@ export default {
     };
   },
   created() {
-    this.$socket.on("newUser", this.Ename);
+    this.$socket.on("ALLuser", this.Ename);
   },
   methods: {
     joinSubmit() {
       this.$router.push({ path: "about", query: { name: this.Ename } });
-      this.$socket.emit("newUser", this.Ename);
+      this.$socket.emit("ALLuser", this.Ename);
     },
   },
 };
